@@ -1,11 +1,11 @@
 import unittest 
-import measures 
+import library.measures as measures
 import numpy as np
 
 class DummyEstimator: 
     def __init__(self, y):
         self.y = y
-    def predict(self, x):
+    def predict(self, x, collapse = False):
         return self.y
 
 class MeasuresTest(unittest.TestCase):

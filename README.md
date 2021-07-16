@@ -1,6 +1,20 @@
 # drep
 Implementation of: Diversity Regularized Ensemble Pruning by Li et al. 2012. for Urban Land Use and Land Cover Classification on Remote Sensing Data. More specifically for the `2018 IEEE GRSS Data Fusion Contest: Data Fusion Classification Challenge` which can be found at [http://dase.grss-ieee.org/index.php](http://dase.grss-ieee.org/index.php).
 
+## Setup 
+You can install the dependencies of this repository with 
+
+```
+pip install requirements.txt
+```
+
+You can run the unit tests of this repository with 
+```
+python -m unittest discover
+```
+
+I recommend using python-3, the code was not tested for python-2.
+
 ## How to
 You can run pruning using the `run_pruning.py` and predict a label map that can be uploaded directly to the contest page with the `run_prediction.py` script. Run 
 
@@ -18,18 +32,39 @@ Note that this code just prunes a collection of labelmaps, not predicts those in
 
 Then provide `data/labelmaps` as a source folder for the pruning.
 
-## Data Provision
-Data is provisioned from a folder (e.g. `data`) and read from there automatically.
-Before running the code for first time you need to setup the class-labels and clean the data.
-When providing a location for the individual label maps, the file reader provided in this repository will also resolve on additional layer of folder structure. A folder structure could look like:
+## Data Provisioning
+When providing individual label maps, the scripts expect to resolve them via an intermediate layer of groups, i.e. if your labelmaps are stored in a folder `labelmaps` provide them, via something like:
 
 ```
-data
-  2018_IEEE_GRSS_DFC_GT_TR.tif
-  trainSamples.png
-  classes.txt
-  labelmaps
+labelmaps
     group_a
+        labelmap_a_1.tif 
+        ...
     group_b
-    ...
+        labelmap_b_1.tif 
+        ...
 ```
+
+Further the estimators expect to find a mapping of classes to RGB-values in a file under `data/classes_rbg.txt`. The file should contain the 
+R-, G- and B-value of each class in a separate line, like so:
+
+```
+0 10 243
+12 210 54
+...
+```
+
+where line `n` corresponds to a class with label `n - 1`.
+I recommend the following overall file structure:
+
+```
+data 
+    classes_rgb.txt
+    labelmaps
+        group_a
+            ...
+        group_b
+            ...
+```
+
+If you are having problems with executing the code or you find bugs or have ideas for improvements, create PR or an issue.
