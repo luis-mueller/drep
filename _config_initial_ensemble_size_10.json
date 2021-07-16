@@ -1,0 +1,5 @@
+[
+    { "samples": 10000, "testsize": 0.0, "method": "drep", "div": 0.5 },
+    { "samples": 10000, "testsize": 0.0, "method": "drep", "div": 0.5 },
+    { "samples": 10000, "testsize": 0.0, "method": "drep", "div": 0.5 }
+]

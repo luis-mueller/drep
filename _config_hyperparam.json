@@ -1,0 +1,18 @@
+[
+    { "samples": 10000, "testsize": 0.0, "method": "drep", "div": 0.25 },
+    { "samples": 10000, "testsize": 0.0, "method": "drep", "div": 0.30 },
+    { "samples": 10000, "testsize": 0.0, "method": "drep", "div": 0.35 },
+    { "samples": 10000, "testsize": 0.0, "method": "drep", "div": 0.40 },
+    { "samples": 10000, "testsize": 0.0, "method": "drep", "div": 0.45 },
+    { "samples": 10000, "testsize": 0.0, "method": "drep", "div": 0.50 },
+    { "samples": 10000, "testsize": 0.0, "method": "drep", "div": 0.55 },
+    { "samples": 10000, "testsize": 0.0, "method": "drep", "div": 0.60 },
+    { "samples": 10000, "testsize": 0.0, "method": "drep", "div": 0.65 },
+    { "samples": 10000, "testsize": 0.0, "method": "drep", "div": 0.70 },
+    { "samples": 10000, "testsize": 0.0, "method": "drep", "div": 0.75 },
+    { "samples": 10000, "testsize": 0.0, "method": "drep", "div": 0.80 },
+    { "samples": 10000, "testsize": 0.0, "method": "drep", "div": 0.85 },
+    { "samples": 10000, "testsize": 0.0, "method": "drep", "div": 0.90 },
+    { "samples": 10000, "testsize": 0.0, "method": "drep", "div": 0.95 },
+    { "samples": 10000, "testsize": 0.0, "method": "drep", "div": 1.00 }
+]
