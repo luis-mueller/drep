@@ -68,3 +68,7 @@ data
 ```
 
 If you are having problems with executing the code or you find bugs or have ideas for improvements, create PR or an issue.
+
+## Acknowledgement
+The implementation of DREP and the corresponding pipeline was applied to the Houston dataset (see above) and thus,
+__the author would like to thank the National Center for Airborne Laser Mapping and the Hyperspectral Image Analysis Laboratory at the University of Houston for acquiring and providing the data used in this study, and the IEEE GRSS Image Analysis and Data Fusion Technical Committee.__
