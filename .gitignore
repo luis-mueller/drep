@@ -132,3 +132,4 @@ dmypy.json
 data/*
 results/*
 logs/*
+scripts/result_tables.ipynb
